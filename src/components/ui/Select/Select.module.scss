@@ -1,0 +1,16 @@
+.select {
+  width: 100%;
+  * {
+    border: none;
+
+  }
+
+  .popup {
+    box-shadow: none;
+    background: #000;
+  }
+
+  &>.ant-select-selector {
+  }
+
+}
