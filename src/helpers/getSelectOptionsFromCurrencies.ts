@@ -1,8 +1,6 @@
-import { ICurrency, ICurrencyFormatted } from 'api/currency';
+import { ICurrency } from 'api/currency';
 
-export const getSelectOptionsFromCurrencies = (
-  currencies: ICurrency[]
-): ICurrencyFormatted[] =>
+export const getSelectOptionsFromCurrencies = (currencies: ICurrency[]) =>
   currencies.map((currency) => ({
     value: currency.id,
     label: currency.id,

@@ -25,7 +25,7 @@
       "types/*": ["./types/*"],
       "constants/*": ["./constants/*"],
       "context/*": ["./context/*"],
-      "helpers/*": ["./helpers/*"]
-    }
-  }
+      "helpers/*": ["./helpers/*"],
+    },
+  },
 }

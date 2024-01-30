@@ -1,8 +1,14 @@
 import styles from './Home.module.scss';
 import { useEffect, useState } from 'react';
 import { getSelectOptionsFromCurrencies } from 'helpers';
-import { getCurrencies, ICurrencyFormatted } from 'api/currency';
+import { getCurrencies } from 'api/currency';
 import { Select } from 'components/ui';
+
+export interface ICurrencyFormatted {
+  label: string;
+  value: string;
+  name: string;
+}
 
 const Home = () => {
   const [options, setOptions] = useState<ICurrencyFormatted[]>([]);
@@ -45,7 +51,6 @@ const Home = () => {
           </div>
           <div className={styles.content__currency_change}>
             <Select
-              // @ts-ignore
               onChange={(value) => {
                 handleChange(value);
               }}

@@ -2,7 +2,6 @@
   width: 100%;
   * {
     border: none;
-
   }
 
   .popup {
@@ -10,7 +9,6 @@
     background: #000;
   }
 
-  &>.ant-select-selector {
+  & > .ant-select-selector {
   }
-
 }

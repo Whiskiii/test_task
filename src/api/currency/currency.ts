@@ -1,7 +1,6 @@
-import axios, { type AxiosResponse } from 'axios'
-import { type ICurrency } from './currency.types'
+import { type AxiosResponse } from 'axios';
+import { type ICurrency } from './currency.types';
+import api from 'api';
 
 export const getCurrencies = async (): Promise<AxiosResponse<ICurrency[]>> =>
-  await axios
-    .get('https://api.coinbase.com/v2/currencies')
-    .then(({ data }) => data)
+  await api.get('/currencies').then(({ data }) => data);

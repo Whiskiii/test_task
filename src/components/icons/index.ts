@@ -1,3 +1,3 @@
-import Arrow from 'components/icons/Arrow'
+import Arrow from 'components/icons/Arrow';
 
-export { Arrow }
+export { Arrow };
